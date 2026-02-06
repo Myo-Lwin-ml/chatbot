@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JumpStart | Curated Fashion Marketplace</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 16px 40px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* HERO */
+.hero {
+  height: 65vh;
+  background: url("https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 40px;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* CATEGORIES */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+.category {
+  position: relative;
+}
+.category img {
+  width: 100%;
+  height: 400px;
+}
+.category span {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+}
+.product {
+  border: 1px solid #eee;
+  padding: 12px;
+}
+.product img {
+  width: 100%;
+  height: 400px;
+}
+.product h4 {
+  margin: 10px 0 4px;
+}
+.product p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* PROMO */
+.promo {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 50px 20px;
+}
+.promo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+}
+
+
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+  text-align: center;
+}
+.service {
+  padding: 20px;
+  border: 1px solid #eee;
+}
+
+/* EDITORIAL */
+.editorial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 25px;
+}
+.editorial img {
+  width: 100%;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  text-align: center;
+}
+.newsletter input {
+  padding: 12px;
+  width: 260px;
+  max-width: 80%;
+}
+.newsletter button {
+  padding: 12px 22px;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 40px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 30px;
+}
+footer h4 {
+  margin-bottom: 12px;
+}
+footer a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">JumpStart</div>
+  <nav>
+    <a href="#">Women</a>
+    <a href="#">Men</a>
+    <a href="#">New In</a>
+    <a href="#">Brands</a>
+    <a href="#">Sale</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Fashion Without Borders</h1>
+    <p>Discover curated designer and contemporary styles</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">Shop by Category</div>
+  <div class="categories">
+    <div class="category"><img src="https://i.pinimg.com/736x/e3/cc/44/e3cc449b52eb535e61082f2778fa6489.jpg"><span>Women</span></div>
+    <div class="category"><img src="https://i.pinimg.com/736x/45/59/fc/4559fc354136b3aef18255d36271c86c.jpg"><span>Men</span></div>
+    <div class="category"><img src="https://images.pexels.com/photos/2988643/pexels-photo-2988643.jpeg"><span>Accessories</span></div>
+    <div class="category"><img src="https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg"><span>Shoes</span></div>
+  </div>
+</section>
+
+<section class="promo">
+  <h2>New Season Arrivals</h2>
+  <p>Fresh drops from global designers</p>
+</section>
+
+<section class="section">
+  <div class="section-title">Featured Products</div>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg">
+      <h4>Tailored Blazer</h4>
+      <p>$180</p>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/79/fe/c1/79fec1edf3e71aceecddd3f22334c6d1.jpg">
+      <h4>Leather Jacket</h4>
+      <p>$240</p>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/1200x/ba/9f/08/ba9f081b0b156db1077db15cae4159aa.jpg">
+      <h4>Minimal Tee</h4>
+      <p>$45</p>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/42/28/b8/4228b87034640a8257104765591b7d56.jpg">
+      <h4>Evening Dress</h4>
+      <p>$210</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="section-title">Why Shop JumpStart</div>
+  <div class="services">
+    <div class="service">🌍 Global Designers</div>
+    <div class="service">🚚 Fast Worldwide Shipping</div>
+    <div class="service">🔄 Easy Returns</div>
+    <div class="service">🔒 Secure Payments</div>
+  </div>
+</section>
+
+
+
+<section class="section newsletter">
+  <div class="section-title">Stay Connected</div>
+  <p>Get new arrivals and exclusive offers</p>
+  <input type="email" placeholder="Your email">
+  <button>Subscribe</button>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>JumpStart</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <a href="#">Contact</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+<script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+<zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cml7esd5u007lpqb7xtj02sn5'></zapier-interfaces-chatbot-embed>
+
+</body>
+</html>
